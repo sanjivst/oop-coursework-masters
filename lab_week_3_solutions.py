@@ -29,5 +29,5 @@ def compound_interest(principal, interest_rate, duration):
         print(f"The total amount of money earned by the investment is {int(investment_value)} £")
     return int(investment_value)
 
-# print(compound_interest(1000, 0.03, 5))
+print(compound_interest(1000, 2, 0))
 

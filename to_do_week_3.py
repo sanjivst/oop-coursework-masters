@@ -2,7 +2,6 @@
 # TODO: Add code here to initialize an empty list 
 tasks = []
 
- 
 # Function to add a task to the list 
 def add_task(task): 
     # TODO: Add code here to add a task to the list 
@@ -17,7 +16,11 @@ def view_tasks():
 
 # Function to remove a task from the list 
 def remove_task(ix): 
-    del tasks[ix]
+    try:
+        del tasks[ix]
+        print(f"Task at index {ix} removed successfully.")
+    except IndexError:
+        print(f"No task found at index {ix}. Please enter a valid index.")
  
 # Main program loop 
 while True: 
@@ -45,3 +48,6 @@ while True:
         break
     else: 
          print("Invalid choice. Please try again.") 
+
+
+
